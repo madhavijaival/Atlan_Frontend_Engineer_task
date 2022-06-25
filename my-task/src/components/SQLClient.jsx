@@ -151,7 +151,7 @@ class SQLClient extends React.Component {
             <div className="query-with-controls">
                 <div className="controls">
                     <div onClick={this.runQuery} className="button">Run ►</div>
-                    <div onClick={this.clear} className="button">Clear</div>
+                    <div onClick={this.clear} className="clear ">Clear &#10006;</div>
                 </div>
                 <textarea
                     ref={this.queryInput}

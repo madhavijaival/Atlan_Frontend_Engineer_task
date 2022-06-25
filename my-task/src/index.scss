@@ -19,18 +19,35 @@ body {
   overflow: scroll;
 
   .highlight {
-    color: rgb(254, 249, 249);
+    @include highlight-style();
+
   }
 
   .title {
     @include title-style();
+
   }
 
   .subtitle {
     @include subtitle-style();
+
   }
 
   .button {
+    cursor: pointer;
+    border: 1px solid #1a202c;
+    padding: 5px;
+    min-width: 64px;
+    background: transparent;
+    transition: all 0.1s ease-in;
+  }
+
+  .button:hover {
+    background: #2ace09;
+    color: #ffffff;
+  }
+
+  .clear {
     cursor: pointer;
     border: 1px solid #1a202c;
     padding: 5px;
@@ -42,17 +59,17 @@ body {
   }
 
 
-  .button:hover {
-    background: #2ace09;
-    color: #ffffff;
+  .clear:hover {
+    background: #dc3d35;
+    color: #fffefe;
   }
 
   .header,
   .footer {
-    background: rgb(51, 14, 85);
+    background: #a93cb3;
     width: 100%;
     text-align: center;
-    color: rgb(254, 249, 249);
+    color: rgb(245, 249, 250);
   }
 
   .header {
@@ -80,7 +97,9 @@ body {
       }
 
       .list {
+
         @include list-style();
+
       }
 
       .query-with-controls {

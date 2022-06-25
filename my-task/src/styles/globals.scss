@@ -1,16 +1,16 @@
-$primary-color: orange;
+$primary-color: #a93cb3;
 $background-color: #1D1D1D;
 $secondary-color: #808080;
 
 $mobile-max-width: 767px;
 
 // buttons
-$button-height: 30px;
+$button-height: 35px;
 $button-color: $primary-color;
-$button-color-hover: darkorange;
+$button-color-hover: rgb(74, 14, 104);
 
 // Borders
-$border-line: 1px dashed $secondary-color;
+$border-line: 2px solid $secondary-color;
 
 // Spacing
 $medium-spacing: 15px;
@@ -35,23 +35,8 @@ $small-spacing: 10px;
 }
 
 @mixin highlight-style () {
-  color: $primary-color;
-}
-
-@mixin button-style ($button-size) {
-  background: $button-color;
-  height: $button-size;
-  line-height: $button-size;
-  width: 2 * $button-size;
-  border-radius: 0.25 * $button-size;
-  text-align: center;
-  color: white;
-  font-size: 0.8em;
-  cursor: pointer;
-
-  &:active, &:hover {
-    background: $button-color-hover;
-  }
+  color: rgb(210, 237, 9);
+  font-size: 15px;
 }
 
 @mixin code-style ($background-color: $background-color, $text-color: white) {
@@ -73,7 +58,7 @@ $small-spacing: 10px;
   margin: 0;
 
   li {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 2em;
     border-top: $border-line;
     text-indent: $small-spacing;
