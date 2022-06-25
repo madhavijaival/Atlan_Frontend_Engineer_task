@@ -2,12 +2,12 @@
 @import 'styles/dashboard';
 
 $header-height: 100px;
-$footer-height: 30px;
+$footer-height: 40px;
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", serif;
+  font-family: Georgia, serif;
 }
 
 .App {
@@ -19,7 +19,7 @@ body {
   overflow: scroll;
 
   .highlight {
-    @include highlight-style();
+    color: rgb(254, 249, 249);
   }
 
   .title {
@@ -31,14 +31,28 @@ body {
   }
 
   .button {
-    @include button-style($button-height);
+    cursor: pointer;
+    border: 1px solid #1a202c;
+    padding: 5px;
+    min-width: 64px;
+
+    background: transparent;
+
+    transition: all 0.1s ease-in;
   }
 
-  .header, .footer {
-    background: $background-color;
+
+  .button:hover {
+    background: #2ace09;
+    color: #ffffff;
+  }
+
+  .header,
+  .footer {
+    background: rgb(51, 14, 85);
     width: 100%;
     text-align: center;
-    color: white;
+    color: rgb(254, 249, 249);
   }
 
   .header {
@@ -80,18 +94,24 @@ body {
           flex-direction: row;
           background: white;
 
-          > .button {
+          >.button {
             margin-right: $small-spacing;
           }
         }
       }
     }
-  } // .sql-client styling ends here
+  }
+
+  // .sql-client styling ends here
 
   .json-to-table {
-    th, td {
+
+    th,
+    td {
       border: 1px solid white;
     }
   }
 
-} // .App styling ends here
+}
+
+// .App styling ends here

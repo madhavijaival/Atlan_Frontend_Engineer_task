@@ -5,12 +5,12 @@ import classNames from 'classnames';
 import TABLES from '../data';
 import { getTableNameFromSQLQuery as getTableName, capitalize } from '../utils';
 
-const DEFAULT_OUTPUT = 'Run query to see output...';
+const DEFAULT_OUTPUT = 'Type SQL query to see output...';
 const DEFAULT_QUERY_INDEX = 0;
 const DEFAULT_QUERY = {
     query: null,
     result: null,
-    label: 'New Query'
+    label: 'Search List'
 };
 
 /**
@@ -49,7 +49,7 @@ class SQLClient extends React.Component {
         // Step 2b: If table name is invalid, show error
         const isValidTableName = Object.keys(TABLES).includes(tableName);
         if (!isValidTableName) {
-            this.updateOutput('Incorrect table name');
+            this.updateOutput('Please add correct table name...');
             return;
         }
         // Step 3: Get result for query
