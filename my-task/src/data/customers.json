@@ -1,0 +1,99 @@
+
+[
+  {
+    "customerID" : "AROUT",
+    "companyName" : "Around the Horn",
+    "contactName" : "Thomas Hardy",
+    "contactTitle" : "Sales Representative"
+  },
+  {
+    "customerID" : "BERGS",
+    "companyName" : "Berglunds snabbköp",
+    "contactName" : "Christina Berglund",
+    "contactTitle" : "Order Administrator"
+  },
+  {
+    "customerID" : "BLAUS",
+    "companyName" : "Blauer See Delikatessen",
+    "contactName" : "Hanna Moos",
+    "contactTitle" : "Sales Representative"
+  },
+  {
+    "customerID" : "BLONP",
+    "companyName" : "Blondesddsl père et fils",
+    "contactName" : "Frédérique Citeaux",
+    "contactTitle" : "Marketing Manager"
+  },
+  {
+    "customerID" : "BOLID",
+    "companyName" : "Bólido Comidas preparadas",
+    "contactName" : "Martín Sommer",
+    "contactTitle" : "Owner"
+  },
+  {
+    "customerID" : "BONAP",
+    "companyName" : "Bon app'",
+    "contactName" : "Laurence Lebihan",
+    "contactTitle" : "Owner"
+  },
+  {
+    "customerID" : "ANTON",
+    "companyName" : "Antonio Moreno Taquería",
+    "contactName" : "Antonio Moreno",
+    "contactTitle" : "Owner"
+  },
+  {
+    "customerID" : "ANATR",
+    "companyName" : "Ana Trujillo Emparedados y helados",
+    "contactName" : "Ana Trujillo",
+    "contactTitle" : "Owner"
+  },
+  {
+    "customerID" : "CACTU",
+    "companyName" : "Cactus Comidas para llevar",
+    "contactName" : "Patricio Simpson",
+    "contactTitle" : "Sales Agent"
+  },
+  {
+    "customerID" : "BSBEV",
+    "companyName" : "B's Beverages",
+    "contactName" : "Victoria Ashworth",
+    "contactTitle" : "Sales Representative"
+  },
+  {
+    "customerID" : "CENTC",
+    "companyName" : "Centro comercial Moctezuma",
+    "contactName" : "Francisco Chang",
+    "contactTitle" : "Marketing Manager"
+  },
+  {
+    "customerID" : "CHOPS",
+    "companyName" : "Chop-suey Chinese",
+    "contactName" : "Yang Wang",
+    "contactTitle" : "Owner"
+  },
+  {
+    "customerID" : "COMMI",
+    "companyName" : "Comércio Mineiro",
+    "contactName" : "Pedro Afonso",
+    "contactTitle" : "Sales Associate"
+  },
+  {
+    "customerID" : "CONSH",
+    "companyName" : "Consolidated Holdings",
+    "contactName" : "Elizabeth Brown",
+    "contactTitle" : "Sales Representative"
+  },
+  {
+    "customerID" : "ALFKI",
+    "companyName" : "Alfreds Futterkiste",
+    "contactName" : "Maria Anders",
+    "contactTitle" : "Sales Representative"
+  },
+  {
+    "customerID" : "BOTTM",
+    "companyName" : "Bottom-Dollar Markets",
+    "contactName" : "Elizabeth Lincoln",
+    "contactTitle" : "Accounting Manager"
+  }
+]

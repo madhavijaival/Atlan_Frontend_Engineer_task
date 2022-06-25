@@ -1,0 +1,94 @@
+$primary-color: orange;
+$background-color: #1D1D1D;
+$secondary-color: #808080;
+
+$mobile-max-width: 767px;
+
+// buttons
+$button-height: 30px;
+$button-color: $primary-color;
+$button-color-hover: darkorange;
+
+// Borders
+$border-line: 1px dashed $secondary-color;
+
+// Spacing
+$medium-spacing: 15px;
+$large-spacing: 20px;
+$small-spacing: 10px;
+
+@mixin title-style () {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 2.5em;
+
+  @media only screen and (max-width: $mobile-max-width) {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+}
+
+@mixin subtitle-style () {
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@mixin highlight-style () {
+  color: $primary-color;
+}
+
+@mixin button-style ($button-size) {
+  background: $button-color;
+  height: $button-size;
+  line-height: $button-size;
+  width: 2 * $button-size;
+  border-radius: 0.25 * $button-size;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  cursor: pointer;
+
+  &:active, &:hover {
+    background: $button-color-hover;
+  }
+}
+
+@mixin code-style ($background-color: $background-color, $text-color: white) {
+  background: $background-color;
+  font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8em;
+  color: $text-color;
+  padding: $small-spacing;
+  height: calc(100% - 2 * $small-spacing);
+  width: calc(100% - 2 * $small-spacing);
+  resize: none;
+  overflow: scroll;
+}
+
+@mixin list-style {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: 1em;
+    line-height: 2em;
+    border-top: $border-line;
+    text-indent: $small-spacing;
+
+    &:last-child {
+      border-bottom: $border-line;
+    }
+
+    &.active {
+      background-color: $button-color;
+    }
+
+    &:hover {
+      background-color: $button-color-hover;
+      color: white;
+    }
+  }
+}

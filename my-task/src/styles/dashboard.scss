@@ -1,0 +1,61 @@
+@import 'globals';
+$dashboard-sidebar-width: 160px;
+
+@mixin dashboard-style () {
+  /**
+   * A Dashboard consists of a left sidebar and right content
+   * The right content is split into top and bottom sections
+   */
+  // Horizontal flex positioning for sidebar and content
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  .sidebar {
+    width: $dashboard-sidebar-width;
+    border-right: $border-line;
+    height: 100%;
+    padding: $small-spacing 0;
+
+    @media only screen and (max-width: $mobile-max-width) {
+      display: none;
+    }
+  }
+
+  .dashboard-content {
+    // Vertical flex positioning for top and bottom sections
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - $dashboard-sidebar-width);
+
+    @media only screen and (max-width: $mobile-max-width) {
+      width: 100%;
+    }
+
+    .content-section {
+      flex-grow: 1;
+      padding: $medium-spacing;
+      overflow: hidden;
+      position: relative;
+
+      &:first-child {
+        height: 30%;
+      }
+
+      &:last-child {
+        height: 70%;
+      }
+
+      .subtitle {
+        text-align: right;
+        width: 100%;
+        border-bottom: $border-line;
+        margin-bottom: $small-spacing;
+      }
+
+      .content {
+        height: calc(100% - 3 * $small-spacing);
+      }
+    }
+  }
+}

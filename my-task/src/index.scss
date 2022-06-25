@@ -1,0 +1,97 @@
+@import 'styles/globals';
+@import 'styles/dashboard';
+
+$header-height: 100px;
+$footer-height: 30px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", serif;
+}
+
+.App {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+
+  .highlight {
+    @include highlight-style();
+  }
+
+  .title {
+    @include title-style();
+  }
+
+  .subtitle {
+    @include subtitle-style();
+  }
+
+  .button {
+    @include button-style($button-height);
+  }
+
+  .header, .footer {
+    background: $background-color;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .header {
+    height: $header-height;
+  }
+
+  .footer {
+    height: $footer-height;
+    line-height: $footer-height;
+
+    @media only screen and (max-width: $mobile-max-width) {
+      font-size: 0.8em;
+    }
+  }
+
+  .sql-client {
+    height: calc(100% - $header-height - $footer-height);
+
+    .dashboard {
+      @include dashboard-style();
+      height: 100%;
+
+      .code-style {
+        @include code-style();
+      }
+
+      .list {
+        @include list-style();
+      }
+
+      .query-with-controls {
+        position: relative;
+        height: 100%;
+
+        .controls {
+          position: absolute;
+          margin-top: -1 * ($button-height + $small-spacing);
+          display: flex;
+          flex-direction: row;
+          background: white;
+
+          > .button {
+            margin-right: $small-spacing;
+          }
+        }
+      }
+    }
+  } // .sql-client styling ends here
+
+  .json-to-table {
+    th, td {
+      border: 1px solid white;
+    }
+  }
+
+} // .App styling ends here
