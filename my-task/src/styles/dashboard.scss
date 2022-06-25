@@ -1,5 +1,5 @@
 @import 'globals';
-$dashboard-sidebar-width: 160px;
+$dashboard-sidebar-width: 250px;
 
 @mixin dashboard-style () {
   /**
@@ -47,7 +47,7 @@ $dashboard-sidebar-width: 160px;
       }
 
       .subtitle {
-        text-align: right;
+        text-align: Left;
         width: 100%;
         border-bottom: $border-line;
         margin-bottom: $small-spacing;

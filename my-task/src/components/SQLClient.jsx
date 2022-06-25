@@ -156,7 +156,7 @@ class SQLClient extends React.Component {
                 <textarea
                     ref={this.queryInput}
                     className="code-style"
-                    placeholder="Enter SQL query..."
+                    placeholder="select * from "
                     defaultValue={queryObject?.query}
                 />
             </div>
