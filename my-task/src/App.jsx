@@ -19,7 +19,7 @@ const App = () => {
                 />
                 <div className="title">Welcome to SQL Query Test</div>
                 <div>
-                    <small>Please choose these table  <em className="highlight">{Object.keys(TABLES).join(', ')}</em> tables</small>
+                    <small>Please choose these table  <em className="highlight">{Object.keys(TABLES).join(', ')} </em>tables </small>
                 </div>
             </div>
             <SQLClient />

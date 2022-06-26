@@ -1,13 +1,14 @@
-const customers = require('./customers.json');
+const regions = require('./regions.json');
 const categories = require('./categories.json');
-const products = require('./products.json');
-const orders = require('./orders.json');
+const territories = require('./territories.json');
+const employees = require('./employees.json');
 
 const data = {
-    customers,
+    regions,
+    employees,
     categories,
-    products,
-    orders
+    territories
+
 }
 
 export default data;

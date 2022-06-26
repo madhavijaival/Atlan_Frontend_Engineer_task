@@ -41,6 +41,7 @@ class SQLClient extends React.Component {
     runQuery = () => {
         // Step 1: Check if query is present. If no query, don't do anything
         const query = this.queryInput?.current.value;
+        console.log(query);
         if (!query) {
             return;
         }
