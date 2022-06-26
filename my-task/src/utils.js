@@ -15,6 +15,18 @@ export const getTableNameFromSQLQuery = (query) => {
     const indexForTableName = queryWords.findIndex(word => word === 'from') + 1;
     const tableName = queryWords[indexForTableName]
 
+
         .replace(';', '');
     return tableName;
+
 }
+/* export const getTableIdFromSQLQuery = (query) => {
+    const queryWords = query.toLowerCase().split(' ');
+    const indexForTableId = queryWords.findIndex(word => word === '*') + 1;
+
+    const tableId = queryWords[indexForTableId]
+
+        .replace(';', '');
+    return tableId;
+
+} */

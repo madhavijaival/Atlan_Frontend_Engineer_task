@@ -4,6 +4,7 @@ import JSONTable from './JSONTable';
 import classNames from 'classnames';
 import TABLES from '../data';
 import { getTableNameFromSQLQuery as getTableName, capitalize } from '../utils';
+//import { getTableIdFromSQLQuery as getTableId } from '../utils';
 
 const DEFAULT_OUTPUT = 'Type SQL query to see output...';
 const DEFAULT_QUERY_INDEX = 0;
@@ -39,15 +40,28 @@ class SQLClient extends React.Component {
      * Adds to the query history on the sidebar
      */
     runQuery = () => {
-        // Step 1: Check if query is present. If no query, don't do anything
+        // Check if query is present. 
         const query = this.queryInput?.current.value;
-        console.log(query);
+
         if (!query) {
             return;
         }
-        // Step 2: Get table name
+        // Get table name
         const tableName = getTableName(query);
-        // Step 2b: If table name is invalid, show error
+        /* 
+                const tableId = getTableId(query);
+                console.log(tableId);
+                const ValidTableId = Object.keys(TABLES).includes();
+                console.log(ValidTableId);
+                if (!ValidTableId) {
+                    this.updateOutput('Please add correct table Id...');
+                    return;
+                }
+                const res = TABLES[tableId];
+                console.log(res);
+                this.pushHistory(query, res, tableId); */
+
+        // If table name is invalid, show error
         const isValidTableName = Object.keys(TABLES).includes(tableName);
         if (!isValidTableName) {
             this.updateOutput('Please add correct table name...');
@@ -56,13 +70,13 @@ class SQLClient extends React.Component {
         // Step 3: Get result for query
         // For now we're simply reading json data in memory
         const result = TABLES[tableName];
-        // Step 4: Push History
+        //  Push History
         this.pushHistory(query, result, tableName);
     }
 
-    /**
-     * Clears query and output
-     */
+
+    // Clears query and output
+
     clear = () => {
         this.setQuery('');
     }
@@ -97,23 +111,23 @@ class SQLClient extends React.Component {
      */
     pushHistory = (query, result, tableName) => {
         const { activeQuery } = this.state;
-        // Step 1: Form the query label
+        //  Form the query label
         const label = `${capitalize(tableName)} select`;
-        // Step 2: Form thr query object
+        // Form thr query object
         const queryObject = { query, result, label };
-        // Step 3: Determine the queryIndex for the query being added/modified
+        //  Determine the queryIndex for the query being added/modified
         let queryIndex;
-        // Step 4: If this is a new query
+        // If this is a new query
         if (activeQuery === DEFAULT_QUERY_INDEX) {
-            // Step 4b: Insert at position 1
+            //  Insert at position 1
             this.history.splice(1, 0, queryObject);
             queryIndex = 1;
         } else {
-            // Step 5: For an existing query, simply update it
+            // For an existing query, simply update it
             this.history[activeQuery] = queryObject;
             queryIndex = activeQuery;
         }
-        // Step 6: Update state
+        // Update state
         this.setState({ opCount: this.state.opCount + 1, activeQuery: queryIndex });
     }
 

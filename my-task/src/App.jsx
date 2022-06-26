@@ -13,7 +13,7 @@ const App = () => {
                         width: "170px",
                         height: "100px",
                         float: "left",
-                        marginLeft: "20px"
+                        marginLeft: "2.1em"
 
                     }}
                 />

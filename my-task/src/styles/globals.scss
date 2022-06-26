@@ -1,4 +1,4 @@
-$primary-color: #a93cb3;
+$primary-color: #4aadf4;
 $background-color: #1D1D1D;
 $secondary-color: #808080;
 
@@ -7,7 +7,7 @@ $mobile-max-width: 767px;
 // buttons
 $button-height: 35px;
 $button-color: $primary-color;
-$button-color-hover: rgb(74, 14, 104);
+$button-color-hover: #2a27da;
 
 // Borders
 $border-line: 2px solid rgb(153, 108, 163);
@@ -20,7 +20,8 @@ $small-spacing: 10px;
 @mixin title-style () {
   font-weight: bold;
   font-size: 2em;
-  line-height: 2.5em;
+  line-height: 2.1em;
+  color: rgb(41, 23, 64);
 
   @media only screen and (max-width: $mobile-max-width) {
     font-size: 1.5em;
@@ -35,7 +36,7 @@ $small-spacing: 10px;
 }
 
 @mixin highlight-style () {
-  color: rgb(210, 237, 9);
+  color: rgb(165, 12, 101);
   font-size: 15px;
 }
 
