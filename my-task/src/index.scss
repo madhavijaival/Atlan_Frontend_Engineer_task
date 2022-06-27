@@ -70,7 +70,7 @@ body {
     background: #4aadf4;
     width: 100%;
     text-align: center;
-    color: rgb(41, 23, 64);
+    color: rgb(67, 55, 83);
   }
 
   .header {
@@ -129,7 +129,15 @@ body {
     th,
     td {
       border: 1px solid white;
+      padding: 10px 10px;
     }
+  }
+
+  .thead {
+    background-color: #2c6a96;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 10px;
   }
 
 }

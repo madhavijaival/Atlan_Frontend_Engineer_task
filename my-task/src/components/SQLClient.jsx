@@ -3,8 +3,10 @@ import Dashboard from './Dashboard';
 import JSONTable from './JSONTable';
 import classNames from 'classnames';
 import TABLES from '../data';
+//import DATA from '../data/regions.json'
+
 import { getTableNameFromSQLQuery as getTableName, capitalize } from '../utils';
-//import { getTableIdFromSQLQuery as getTableId } from '../utils';
+import { getTableIdFromSQLQuery as getTableId } from '../utils';
 
 const DEFAULT_OUTPUT = 'Type SQL query to see output...';
 const DEFAULT_QUERY_INDEX = 0;
@@ -48,18 +50,32 @@ class SQLClient extends React.Component {
         }
         // Get table name
         const tableName = getTableName(query);
-        /* 
-                const tableId = getTableId(query);
-                console.log(tableId);
-                const ValidTableId = Object.keys(TABLES).includes();
-                console.log(ValidTableId);
-                if (!ValidTableId) {
-                    this.updateOutput('Please add correct table Id...');
-                    return;
-                }
-                const res = TABLES[tableId];
-                console.log(res);
-                this.pushHistory(query, res, tableId); */
+        // Get table ID
+        var tableId = getTableId(query);
+        console.log(tableId);
+        //get valid tableId
+        const ValidTableId = Object.keys(TABLES).includes(tableId);
+        console.log(ValidTableId);
+
+        if (ValidTableId !== false) {
+            // If table ID is invalid, show error
+            if (!ValidTableId) {
+                this.updateOutput('Please add correct table Id...');
+                return;
+            }
+
+            //tableId = DATA.map(s => s.regionID);
+            // //var ARR = [];
+            // console.log(tableId);
+            // const result = [tableId];
+
+            {
+                const result = TABLES[tableId];
+                console.log(result);
+                this.pushHistory(query, result, tableId);
+            }
+
+        }
 
         // If table name is invalid, show error
         const isValidTableName = Object.keys(TABLES).includes(tableName);
@@ -67,12 +83,15 @@ class SQLClient extends React.Component {
             this.updateOutput('Please add correct table name...');
             return;
         }
-        // Step 3: Get result for query
+        //  Get result for query
         // For now we're simply reading json data in memory
-        const result = TABLES[tableName];
-        //  Push History
-        this.pushHistory(query, result, tableName);
+        {
+            const result = TABLES[tableName];
+            //  Push History
+            this.pushHistory(query, result, tableName);
+        }
     }
+
 
 
     // Clears query and output
@@ -104,7 +123,7 @@ class SQLClient extends React.Component {
     }
 
     /**
-     * Adds a query to the history (maintained in component state)
+     * Adds a query to the history 
      * @param {string} query
      * @param {json} result
      * @param {string} tableName
@@ -185,7 +204,7 @@ class SQLClient extends React.Component {
             <div className="sql-client">
                 <Dashboard
                     sidebarContent={sidebarContent}
-                    topLabel="Query"
+                    topLabel="SQL Query"
                     topContent={topContent}
                     bottomLabel="Output"
                     bottomContent={bottomContent}

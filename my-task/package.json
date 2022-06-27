@@ -1,7 +1,7 @@
 {
-  "name": "atlan-front-end-coding-challenge",
+  "name": "atlan_frontend_engineer_task",
   "version": "1.0.0",
-  "description": "Atlan front-end Coding Challenge",
+  "description": "Atlan_frontend_engineer_task",
   "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

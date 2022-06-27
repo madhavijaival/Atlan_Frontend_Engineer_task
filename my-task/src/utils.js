@@ -3,6 +3,7 @@
  * @param str
  * @returns {*|string}
  */
+
 export const capitalize = (str) => str && str[0].toUpperCase() + str.slice(1).toLowerCase();
 
 /**
@@ -20,13 +21,13 @@ export const getTableNameFromSQLQuery = (query) => {
     return tableName;
 
 }
-/* export const getTableIdFromSQLQuery = (query) => {
-    const queryWords = query.toLowerCase().split(' ');
-    const indexForTableId = queryWords.findIndex(word => word === '*') + 1;
+export const getTableIdFromSQLQuery = (query) => {
+    const queryWords = query.split(' ');
+    const indexForTableId = queryWords.findIndex(word => word === 'select') + 1;
 
     const tableId = queryWords[indexForTableId]
 
         .replace(';', '');
     return tableId;
 
-} */
+}

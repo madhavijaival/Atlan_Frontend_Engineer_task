@@ -7,12 +7,15 @@ class JSONTable extends React.Component {
     render() {
         const { jsonList } = this.props;
         // Get the column names 
+
         const columns = Object.keys(jsonList[0]).filter(column => typeof jsonList[0][column] !== 'object');
         return (
             <table className="json-to-table">
                 <tbody>
+
                     {/* Create header row */}
-                    <tr>{columns.map(column => <th key={`${column}-header`}>{column}</th>)}</tr>
+                    <tr className="thead">{columns.map(column => <th key={`${column}-header`}>{column}</th>)}</tr>
+
                     {/* Add data rows */}
                     {jsonList.map((row, index) => {
                         return (
