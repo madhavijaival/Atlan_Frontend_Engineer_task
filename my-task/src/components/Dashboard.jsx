@@ -15,6 +15,7 @@ class Dashboard extends React.Component {
                 <div className="dashboard-content">
                     <div className="content-section">
                         <div className="subtitle">{topLabel}</div>
+                        <div className="msg">You can run these 2 queries : select * from [tablename] OR select employeeID [any table name+ID] from [tablename]</div>
                         <div className="content">{topContent}</div>
                     </div>
                     <div className="content-section">

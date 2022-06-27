@@ -1,0 +1,48 @@
+[
+    {
+        "employeeID": 1,
+        "lastName": "Davolio",
+        "firstName": "Nancy"
+    },
+    {
+        "employeeID": 2,
+        "lastName": "Fuller",
+        "firstName": "Andrew"
+    },
+    {
+        "employeeID": 3,
+        "lastName": "Leverling",
+        "firstName": "Janet"
+    },
+    {
+        "employeeID": 4,
+        "lastName": "Peacock",
+        "firstName": "Margaret"
+    },
+    {
+        "employeeID": 5,
+        "lastName": "Buchanan",
+        "firstName": "Steven"
+    },
+    {
+        "employeeID": 6,
+        "lastName": "Suyama",
+        "firstName": "Michael"
+    },
+    {
+        "employeeID": 7,
+        "lastName": "King",
+        "firstName": "Robert",
+        "title": "Sales Representative"
+    },
+    {
+        "employeeID": 8,
+        "lastName": "Callahan",
+        "firstName": "Laura"
+    },
+    {
+        "employeeID": 9,
+        "lastName": "Dodsworth",
+        "firstName": "Anne"
+    }
+]

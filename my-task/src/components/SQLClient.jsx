@@ -3,7 +3,7 @@ import Dashboard from './Dashboard';
 import JSONTable from './JSONTable';
 import classNames from 'classnames';
 import TABLES from '../data';
-//import DATA from '../data/regions.json'
+
 
 import { getTableNameFromSQLQuery as getTableName, capitalize } from '../utils';
 import { getTableIdFromSQLQuery as getTableId } from '../utils';
@@ -114,7 +114,7 @@ class SQLClient extends React.Component {
      */
     onClickExistingQuery = (index) => {
         this.setState({ activeQuery: index });
-        // If user clicks on `New Query` (always the first element), then clear state
+        // If user clicks on `New Query`, then clear state
         if (index === DEFAULT_QUERY_INDEX) {
             this.clear();
         } else {
@@ -190,7 +190,7 @@ class SQLClient extends React.Component {
                 <textarea
                     ref={this.queryInput}
                     className="code-style"
-                    placeholder="select * from "
+                    placeholder="Please type query here..."
                     defaultValue={queryObject?.query}
                 />
             </div>

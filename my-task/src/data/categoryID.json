@@ -1,0 +1,36 @@
+[
+    {
+        "categoryID": 2,
+        "name": "Condiments"
+    },
+    {
+        "categoryID": 1,
+        "name": "Beverages"
+    },
+    {
+        "categoryID": 3,
+        "name": "Confections"
+    },
+    {
+        "categoryID": 4,
+        "description": "Cheeses",
+        "name": "Dairy Products"
+    },
+    {
+        "categoryID": 5,
+        "name": "Grains/Cereals"
+    },
+    {
+        "categoryID": 6,
+        "description": "Prepared meats",
+        "name": "Meat/Poultry"
+    },
+    {
+        "categoryID": 7,
+        "name": "Produce"
+    },
+    {
+        "categoryID": 8,
+        "name": "Seafood"
+    }
+]

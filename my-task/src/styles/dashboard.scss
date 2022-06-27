@@ -56,6 +56,10 @@ $dashboard-sidebar-width: 250px;
       .content {
         height: calc(100% - 3 * $small-spacing);
       }
+
+      .msg {
+        text-align: center;
+      }
     }
   }
 }

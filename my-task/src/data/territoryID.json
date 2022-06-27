@@ -1,0 +1,78 @@
+[
+    {
+        "territoryID": "01581",
+        "regionID": 1
+    },
+    {
+        "territoryID": "01730",
+        "regionID": 1
+    },
+    {
+        "territoryID": "01833",
+        "regionID": 1
+    },
+    {
+        "territoryID": "02116",
+        "regionID": 1
+    },
+    {
+        "territoryID": "02139",
+        "regionID": 1
+    },
+    {
+        "territoryID": "02184",
+        "regionID": 1
+    },
+    {
+        "territoryID": "02903",
+        "regionID": 1
+    },
+    {
+        "territoryID": "03049",
+        "regionID": 3
+    },
+    {
+        "territoryID": "03801",
+        "regionID": 3
+    },
+    {
+        "territoryID": "06897",
+        "regionID": 1
+    },
+    {
+        "territoryID": "07960",
+        "regionID": 1
+    },
+    {
+        "territoryID": 72716,
+        "regionID": 4
+    },
+    {
+        "territoryID": 75234,
+        "regionID": 4
+    },
+    {
+        "territoryID": 78759,
+        "regionID": 4
+    },
+    {
+        "territoryID": 80202,
+        "regionID": 2
+    },
+    {
+        "territoryID": 80909,
+        "regionID": 2
+    },
+    {
+        "territoryID": 85014,
+        "regionID": 2
+    },
+    {
+        "territoryID": 85251,
+        "regionID": 2
+    },
+    {
+        "territoryID": 90405,
+        "regionID": 2
+    }
+]
