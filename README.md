@@ -28,7 +28,20 @@ Create, design and implement a web-based application capable of running SQL quer
 
  Framework: <code><img height="50" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" title="React"></code></br>
 
+<strong>OVERVIEW:-</strong>
+It is a basic web application prototype that can conduct SQL queries and display the rows of any given dataset. I obtained the data by converting csv files to json files, which can then be re-rendered using SQL queries.
 
+<strong>PERFORMANCE AND LOAD TIME:-</strong>
+<table>
+  <tr>
+    <td valign="top"><img  width="100%" alt="image" src=""/></td>
+    <td valign="top"><img  width="100%" alt="image" src=""/></td>
+  </tr>
+  <tr>
+    <td valign="top"><img width="100%" alt="image" src=""/></td>
+    <td valign="top"><img align="right" width="100%" alt="image" src=""/></td>
+  </tr>
+</table>
 
 
 
