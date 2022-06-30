@@ -31,7 +31,9 @@ Create, design and implement a web-based application capable of running SQL quer
 <strong>OVERVIEW:-</strong>
 It is a basic web application prototype that can conduct SQL queries and display the rows of any given dataset. I obtained the data by converting csv files to json files, which can then be re-rendered using SQL queries.
 
-<strong>PERFORMANCE AND LOAD TIME:-</strong>
+<strong>PERFORMANCE AND LOAD TIME:-</strong></br>
+- I used the google Lighthouse open-source tool for the performance check, this automated tool for help me to improving the performance, quality, and correctness of my web apps. 
+- For load time check I used chrome's developer tool "Chrome -> Right Click -> Inspect Element -> Network Tab"
 
 <table>
   <tr>
