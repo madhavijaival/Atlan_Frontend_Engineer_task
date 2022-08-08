@@ -1,4 +1,4 @@
-# [Atlan_frontend_engineer_task](https://madhavijaival-atlan-task.netlify.app/)
+# SQL Queries
 
   
   ### `yarn start`
